@@ -807,7 +807,7 @@ void usercontrol(void) {
     claw_mech.setVelocity(100, pct);
     intake.setVelocity(100, pct);
     Drivetrain.setDriveVelocity(100, pct);
-    if (Controller1.ButtonRight.pressing()) {
+    if (Controller1.ButtonB.pressing()) {
       notstuck = true;
       if (notstuck == true) {
       claw_mech.setVelocity(100, pct);
@@ -819,7 +819,7 @@ void usercontrol(void) {
           claw_mech.stop(hold);
       }
     }
-    if (Controller1.ButtonB.pressing()) {
+    if (Controller1.ButtonRight.pressing()) {
         notstuck = false;
         wait (.1,sec);
         claw_mech.spinFor(60,degrees);
